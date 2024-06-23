@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "11e8bfd1-30a1-451e-bab3-f143809b5b21",
+		"name": "graphql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10411842"
+	},
+	"item": [
+		{
+			"name": "get all instalations service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query GetAllInstalation($code: String!) {\n  getAllInstalation(code: $code) {\n    data {\n      code_instalation\n      description_instalation\n      created_at\n      updated_at\n    }\n    status_code\n    message\n  }\n}\n",
+						"variables": "{    \n    \"code\": \"d7becb43-0e54-4f9d-abe6-9780582a4317\" \n}\n"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8004/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
