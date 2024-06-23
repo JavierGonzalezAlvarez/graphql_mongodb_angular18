@@ -1,0 +1,43 @@
+<div class="data-form">
+    <h2> Crear una nueva instalación</h2>
+      
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">           
+
+        <div class="form-group">            
+            <mat-label> Descripción instalación: </mat-label> 
+            <mat-form-field appearance="outline">                             
+                <input matInput
+                    formControlName="description_instalation"
+                    [(ngModel)]="description_instalation"
+                >
+            </mat-form-field>
+            <div *ngIf="validatorError('description_instalation')" class="error-message">
+                Deswcripción requerido
+            </div>
+            <div *ngIf="validatorError('name_iva')" class="error-message">
+                Campo "Descripción" max. caracteres: {{maxDescriptionInstalationChr}}
+            </div>
+            </div>          
+
+            <div class="form-group">             
+            <mat-label> Activo?: </mat-label>
+            <mat-slide-toggle
+                #slideToggle 
+                (change)="onChangeSlideToggle($event)"
+                [checked]="status_instalation"
+            >
+            </mat-slide-toggle>
+            <div *ngIf="validatorError('status_instalation')" class="error-message">
+                Activo requerido
+            </div>            
+        </div>
+              
+        <div class  ="form-actions">
+            <button mat-flat-button color="primary">Aceptar</button>        
+            <button mat-flat-button color="warn" (click)="onCancel()">Cancelar</button>
+        </div>
+
+    </form>
+  </div>
+  
+

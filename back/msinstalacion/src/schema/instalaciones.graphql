@@ -1,0 +1,13 @@
+type Instalations {
+    code_instalacion: String    
+    description_instalation: String
+    category_instalation: String
+    created_at: Date
+    updated_at: Date    
+}
+    
+type Query {
+    get_all_instalations: [Instalations]
+
+
+}

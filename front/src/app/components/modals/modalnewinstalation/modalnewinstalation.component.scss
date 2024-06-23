@@ -1,0 +1,29 @@
+.data-form {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex; /* Utiliza la disposición en línea */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.mat-form-field {
+  width: 100%; /* Ajusta el ancho del campo al 100% */
+}
+
+.label {
+  width: 200px; /* Ancho fijo para las etiquetas */
+  margin-right: 20px; /* Margen derecho para separar la etiqueta del campo */
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}

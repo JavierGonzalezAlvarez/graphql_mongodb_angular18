@@ -1,0 +1,39 @@
+.mat_toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); 
+}
+
+
+a {
+  font-size: 18px;
+}
+
+.company {
+  order: 1; 
+}
+
+.mat_toolbar .menu{
+  order: -1;
+}
+
+.red-text {
+  color: red;
+}
+
+
+a {
+  margin-left: 10px;
+  margin-right: 0.5rem;
+}
+
+.thick-divider {
+  border-top-width: 2px;
+}
+

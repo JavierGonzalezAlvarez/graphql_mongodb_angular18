@@ -1,0 +1,20 @@
+<mat-toolbar 
+  class ="mat_toolbar"      
+  style="background-color: #f0e8e8;"
+>
+
+  <div class="menu">
+
+    <mat-icon routerLink="">home</mat-icon>
+
+    <ng-container autorizado>
+      <a mat-flat-button color="primary" [matMenuTriggerFor]="ins">Instalaciones</a>
+      <mat-menu #ins="matMenu">          
+        <a>Instalaciones</a>
+        <a mat-menu-item routerLink="instalations"><mat-icon>list</mat-icon> Instalaciones</a>         
+      </mat-menu>
+    </ng-container>
+  </div>
+
+</mat-toolbar>
+

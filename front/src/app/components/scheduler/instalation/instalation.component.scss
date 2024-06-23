@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+font-size: 14px;
+width: 100%;
+}
+
+.mat-checkbox {
+display: inline-block;
+}
+
+.mat-cell {
+display: flex;
+align-items: center; 
+}
+
+button {
+margin-left: 20px;
+margin-right: 2rem;
+}
+
+.table-container {
+height: 350px; 
+overflow-y: auto;
+
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.sticky-header {
+position: sticky;
+top: 0;    
+background-color: white;
+z-index: 1;
+}
+
+tr:hover {
+
+background-color: #b2f09a;
+}
+
+.header-background {
+background-color: #c3ceca; 
+}
+
+.form-with-margin, h2 {
+margin-left: 1cm;
+}
